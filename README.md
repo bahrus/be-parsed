@@ -4,6 +4,12 @@
 
 Parse a script tag that contains JSON.
 
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/be-parsed)
+[![Playwright Tests](https://github.com/bahrus/be-parsed/actions/workflows/CI.yml/badge.svg)](https://github.com/bahrus/be-parsed/actions/workflows/CI.yml)
+[![NPM version](https://badge.fury.io/js/be-parsed.png)](http://badge.fury.io/js/be-parsed)
+[![How big is this package in your project?](https://img.shields.io/bundlephobia/minzip/be-parsed?style=for-the-badge)](https://bundlephobia.com/result?p=be-parsed)
+<img src="http://img.badgesize.io/https://cdn.jsdelivr.net/npm/be-parsed?compression=gzip">
+
 ```html
 <script type="application/ld+json" be-parsed>
 {
@@ -25,6 +31,38 @@ Parse a script tag that contains JSON.
 The value of the parsed JSON is available via:
 
 ```JavaScript
-oScriptElement.
+const parsedVal = oScriptElement.beEnhanced.beParsed.value;
+```
+
+## Viewing Your Element Locally
+
+Any web server that can serve static files will do, but...
+
+1.  Install git.
+2.  Fork/clone this repo.
+3.  Install node.js
+4.  Open command window to folder where you cloned this repo.
+5.  > npm install
+6.  > npm run serve
+7.  Open http://localhost:3030/demo/ in a modern browser.
+
+## Running Tests
+
+```
+> npm run test
+```
+
+## Using from ESM Module:
+
+```JavaScript
+import 'be-parsed/be-parsed.js';
+```
+
+## Using from CDN:
+
+```html
+<script type=module crossorigin=anonymous>
+    import 'https://esm.run/be-parsed';
+</script>
 ```
 
