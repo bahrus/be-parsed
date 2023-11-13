@@ -1,16 +1,47 @@
 {
   "name": "be-parsed",
   "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
+  "keywords": [
+    "web-components",
+    "web-component",
+    "custom-element",
+    "custom-elements",
+    "JSON",
+    "Parse"
+  ],
+  "description": "Parse a script tag that contains JSON.",
+  "main": "be-parsed.js",
+  "module": "be-parsed.js",
+  "exports": {
+    ".": "./be-parsed.js",
+    "./be-parsed.js": "./be-parsed.js"
+  },
+  "files": [
+    "*.js",
+    "types.d.ts"
+  ],
+  "types": "types.d.ts",
+  "dependencies": {
+    "be-enhanced": "0.0.55",
+    "be-hive": "0.0.123",
+    "trans-render": "0.0.707",
+    "xtal-element": "0.0.579"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.39.0",
+    "may-it-serve": "0.0.6"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "node node_modules/may-it-serve",
+    "test": "playwright test",
+    "safari": "npx playwright wk http://localhost:3030",
+    "update": "ncu -u && npm install"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bahrus/be-parsed.git"
   },
-  "author": "",
+  "author": "anderson.bruce.b@gmail.com",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bahrus/be-parsed/issues"
