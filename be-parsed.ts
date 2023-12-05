@@ -5,7 +5,8 @@ import {Actions, AllProps, AP, PAP, ProPAP, POA} from './types';
 import {register} from 'be-hive/register.js';
 
 export class BeParsed extends BE<AP, Actions, HTMLScriptElement> implements Actions{
-    override async attach(el: HTMLScriptElement, enhancement: EnhancementInfo) {
+    override async attach(el: HTMLScriptElement, enhancementInfo: EnhancementInfo) {
+        super.attach(el, enhancementInfo);
         this.value = JSON.parse(el.innerHTML);
         this.resolved = true;
     }
