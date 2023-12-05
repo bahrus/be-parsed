@@ -4,7 +4,6 @@
 
 Parse a script tag that contains JSON.
 
-[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/be-parsed)
 [![Playwright Tests](https://github.com/bahrus/be-parsed/actions/workflows/CI.yml/badge.svg)](https://github.com/bahrus/be-parsed/actions/workflows/CI.yml)
 [![NPM version](https://badge.fury.io/js/be-parsed.png)](http://badge.fury.io/js/be-parsed)
 [![How big is this package in your project?](https://img.shields.io/bundlephobia/minzip/be-parsed?style=for-the-badge)](https://bundlephobia.com/result?p=be-parsed)

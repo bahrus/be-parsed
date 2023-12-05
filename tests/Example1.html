@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <script type="application/ld+json" be-parsed>
+    <script id=scriptTest type="application/ld+json" be-parsed>
         {
             "@context" : "http://schema.org",
             "@type" : "Article",
@@ -19,6 +19,7 @@
             "articleSection" : "The next time you thank your lucky stars, you might want to bless the binaries. New calculations indicate that a massive star whose outer layer gets torn off by a companion star ends up shedding a lot more carbon than if the star had been born a loner. “That star is making about twice as much carbon as a single star would make,” says Rob Farmer, an astrophysicist at the Max Planck Institute for Astrophysics in Garching, Germany. All life on Earth is based on carbon, the fourth most abundant element in the cosmos, after hydrogen, helium and oxygen. Like nearly every chemical element heavier than helium, carbon is formed in stars (SN: 2/12/21). For many elements, astronomers have been able to pin down the main source. For example, oxygen comes almost entirely from massive stars, most of which explode, while nitrogen is made mostly in lower-mass stars, which don’t explode. In contrast, carbon arises both in massive and lower-mass stars. Astronomers would like to know exactly which types of stars forged the lion’s share of this vital element. Farmer and his colleagues looked specifically at massive stars, which are at least eight times heavier than the sun, and calculated how they behave with and without partners. Nuclear reactions at the core of a massive star first turn hydrogen into helium. When the core runs out of hydrogen, the star expands, and soon the core starts converting helium into carbon."
         }
     </script>
+    <div id=target></div>
     <script type=importmap>
         {
             "imports": {
@@ -34,5 +35,17 @@
     <script type=module>
         import '../be-parsed.js';
     </script>
+    <script>
+        function runTest(){
+            if(scriptTest.beEnhanced.beParsed.value.name === 'How massive stars in binary systems turn into carbon factories'){
+                target.setAttribute('mark', 'good');
+            }
+            
+        }
+        setTimeout(() => {
+            runTest();
+        }, 400);
+    </script>
+
 </body>
 </html>
