@@ -1,6 +1,5 @@
 import { BE, propDefaults, propInfo } from 'be-enhanced/BE.js';
 import { XE } from 'xtal-element/XE.js';
-import { register } from 'be-hive/register.js';
 export class BeParsed extends BE {
     async attach(el, enhancementInfo) {
         super.attach(el, enhancementInfo);
@@ -8,9 +7,7 @@ export class BeParsed extends BE {
         this.resolved = true;
     }
 }
-const tagName = 'be-parsed';
-const ifWantsToBe = 'parsed';
-const upgrade = '*';
+export const tagName = 'be-parsed';
 const xe = new XE({
     config: {
         tagName,
@@ -25,4 +22,3 @@ const xe = new XE({
     },
     superclass: BeParsed
 });
-register(ifWantsToBe, upgrade, tagName);
