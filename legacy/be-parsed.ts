@@ -1,7 +1,7 @@
 import {BE, propDefaults, propInfo} from 'be-enhanced/BE.js';
 import {BEConfig, EnhancementInfo} from 'be-enhanced/types';
 import {XE} from 'xtal-element/XE.js';
-import {Actions, AllProps, AP, PAP, ProPAP, POA} from './types';
+import {Actions, AllProps, AP, PAP, ProPAP, POA} from '../types';
 
 export class BeParsed extends BE<AP, Actions, HTMLScriptElement> implements Actions{
     override async attach(el: HTMLScriptElement, enhancementInfo: EnhancementInfo) {
