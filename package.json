@@ -22,12 +22,12 @@
   ],
   "types": "types.d.ts",
   "dependencies": {
-    "be-enhanced": "0.0.147",
-    "be-hive": "0.0.226",
-    "trans-render": "0.0.848"
+    "be-enhanced": "0.0.165",
+    "be-hive": "0.0.245",
+    "trans-render": "0.0.880"
   },
   "devDependencies": {
-    "@playwright/test": "1.48.0",
+    "@playwright/test": "1.50.0",
     "ssi-server": "0.0.1"
   },
   "scripts": {
