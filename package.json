@@ -14,7 +14,8 @@
   "module": "be-parsed.js",
   "exports": {
     ".": "./be-parsed.js",
-    "./be-parsed.js": "./be-parsed.js"
+    "./be-parsed.js": "./be-parsed.js",
+    "./emc.js": "./emc.js"
   },
   "files": [
     "*.js",
